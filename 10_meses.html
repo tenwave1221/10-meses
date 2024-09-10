@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz 10 Meses Amor</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #eae6ca;
+            color: hsl(0, 0%, 0%);
+            text-align: center;
+            padding: 20px;
+        }
+        #password-section, #content {
+            display: none;
+        }
+        h1 {
+            font-size: 3em;
+            margin-top: 50px;
+            color: #7e57c2;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        input[type="password"] {
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid #7e57c2;
+            width: 300px;
+            font-size: 1.2em;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #7e57c2;
+            color: white;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #6a47a0;
+        }
+        .gallery img {
+            width: 300px;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .message {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+        #note-section {
+            margin-top: 30px;
+            text-align: center;
+        }
+        #display-note {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        textarea {
+            width: 300px;
+            height: 100px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid #7e57c2;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Reproducción automática de música de fondo en loop -->
+    <audio autoplay loop>
+        <source src="musica/youtube-downloaders.net - MILO J - M.A.I (Video Oficial).mp3" type="audio/mp3">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+
+    <!-- Sección de inicio de sesión -->
+    <div id="login-section">
+        <h1>¡Bienvenida Joven Astrid Maricielo Claros Borja de Yi!</h1>
+        <p>Para acceder, ingresa la contraseña (Si no puede contactarse al 934153545): </p>
+        <input type="password" id="password-input" placeholder="Ingresa la contraseña">
+        <br><br>
+        <button onclick="checkPassword()">Entrar</button>
+        <p id="error-message" style="color: red; display: none;">Contraseña incorrecta. Inténtalo de nuevo.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <video controls>
+            <source src="videos/lv_7328190532008545543_20240212234751.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+
+    </div>
+
+    <!-- Sección del contenido principal -->
+    <div id="content">
+        <h1>¡Feliz 7 Meses, Mi Amor!</h1>
+        <p>Gracias por cada momento que hemos compartido, aca estan las mejores fotos que tenemos desde que empezamos a salir un 10/02/2024. Que rápido ya estamos 7 meses amor cinco meses más y cumplimos un año de infinitos.
+        </p>
+
+        <div class="gallery">
+            <img src="imagenes/AE10.jpeg">
+            <img src="imagenes/WhatsApp Image 2024-09-09 at 20.25.45 (2).jpeg" >
+            <img src="imagenes/WhatsApp Image 2024-09-09 at 20.25.45 (3).jpeg" >
+            <img src="imagenes/WhatsApp Image 2024-09-09 at 20.25.45 (4).jpeg">
+            <img src="imagenes/WhatsApp Image 2024-09-09 at 20.25.45 (5).jpeg">
+            <img src="imagenes/WhatsApp Image 2024-09-09 at 20.25.45.jpeg">
+            <img src="imagenes/WhatsApp Image 2024-09-09 at 20.25.46 (1).jpeg">
+            <img src="imagenes/WhatsApp Image 2024-09-09 at 20.25.46 (2).jpeg">
+            <img src="imagenes/WhatsApp Image 2024-09-09 at 20.25.46 (3).jpeg">
+            <img src="imagenes/WhatsApp Image 2024-09-09 at 20.25.46 (4).jpeg">
+            <img src="imagenes/WhatsApp Image 2024-09-09 at 20.25.46 (5).jpeg">
+            <img src="imagenes/WhatsApp Image 2024-09-09 at 20.25.46.jpeg">
+            <img src="imagenes/WhatsApp Image 2024-09-09 at 20.25.47 (1).jpeg">
+            <img src="imagenes/WhatsApp Image 2024-09-09 at 20.25.47 (2).jpeg">
+            <img src="imagenes/WhatsApp Image 2024-09-09 at 20.25.47 (3).jpeg">
+            <img src="imagenes/WhatsApp Image 2024-09-09 at 20.25.47.jpeg">
+            <img src="imagenes/WhatsApp Image 2024-09-09 at 20.25.48 (1).jpeg">
+            <img src="imagenes/WhatsApp Image 2024-09-09 at 20.25.48 (2).jpeg">
+            <img src="imagenes/WhatsApp Image 2024-09-09 at 20.25.48 (3).jpeg">
+            <img src="imagenes/WhatsApp Image 2024-09-09 at 20.25.48.jpeg">
+
+        </div>
+
+        <div class="message">
+            <p><strong>Carta:</strong> 
+                <br>
+                Querida Astrid de Yi:
+                <br>
+                Hoy, 10/09/2024, cumplimos 7 meses de relación, un mes más a tu lado como tu esposo, no puedo evitar sentirme increíblemente afortunado de tenerte a mi lado. Desde el primer momento que te volví a ver, supe que había encontrado a alguien verdaderamente especial, pero con el tiempo he llegado a darme cuenta de que eres mucho más que eso. Eres mi compañera, mi apoyo constante, y la persona que me llena de amor todos los días, el motivo de mis sonrisas. Cada día que compartimos juntos es un recordatorio de cuánto te amo y valoro cada pequeña cosa que haces por mí, incluso cuando a veces no lo digo en voz alta.
+                Tu PACIENCIA, tu risa y esa forma tan única en la que iluminas los días más oscuros me inspiran a ser una mejor persona. Me haces sentir capaz de lograr cualquier cosa, porque sé que, pase lo que pase, siempre estás ahí, a mi lado. Hemos compartido tantos momentos hermosos y superados desafíos juntos, y estoy emocionado por todo lo que nos espera en el futuro. No hay nada que me haga más feliz que construir una vida junto a ti con nuestros 24 hijos, 12 husky, un garaje lleno de carros, casa con piscina, cancha de básquet, futbol, vóley, handball y obviamente un huerto gigante y una montaña que desde nuestra ventana puedas ver un mensaje “Te amo, atte. tu amado esposo” de tulipanes.
+                Gracias por ser tú, por ser mi refugio y por llenar cada rincón de mi vida de amor y alegría. Te amo más de lo que las palabras podrían expresar, y prometo seguir cuidándote, amándote y apoyándote todos los días de mi vida. <br>
+                Con todo mi amor, <br>
+                Tu amado esposo Ethan Yi
+
+            </p>
+        </div>
+
+        <!-- Sección para que tu novia deje una nota -->
+        <div id="note-section">
+            <h2>Déjame una nota:</h2>
+            <textarea id="note-input" placeholder="Escribe tu nota aquí..."></textarea>
+            <br><br>
+            <button onclick="saveNote()">Enviar Nota</button>
+        </div>
+
+        <!-- Aquí se mostrará la nota después de ser enviada -->
+        <div id="display-note" style="display: none;">
+            <h3>Tu Nota:</h3>
+            <p id="note-content"></p>
+        </div>
+    </div>
+
+    <script>
+        // Función para verificar la contraseña
+        function checkPassword() {
+            var password = document.getElementById("password-input").value;
+            var errorMessage = document.getElementById("error-message");
+            var content = document.getElementById("content");
+            var loginSection = document.getElementById("login-section");
+
+            // Contraseña que has elegido
+            var correctPassword = "10/09/2024";
+
+            if (password === correctPassword) {
+                loginSection.style.display = "none";
+                content.style.display = "block";
+            } else {
+                errorMessage.style.display = "block";
+            }
+        }
+
+        // Función para guardar y mostrar la nota
+        function saveNote() {
+            var noteInput = document.getElementById('note-input').value;
+            if (noteInput.trim() !== "") {
+                document.getElementById('note-content').innerText = noteInput;
+                document.getElementById('display-note').style.display = 'block';
+                document.getElementById('note-input').value = ''; // Limpiar el campo de texto
+            } else {
+                alert("Por favor, escribe algo antes de enviar.");
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+
+
